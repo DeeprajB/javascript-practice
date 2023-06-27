@@ -1,0 +1,30 @@
+.display-number{
+    width: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+}
+
+.item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.num-1 {
+    background-color: green;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.number-selector{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
