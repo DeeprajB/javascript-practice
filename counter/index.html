@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="counter">
+        <h1 class="title">Counter</h1>
+        <h2 class="counter-value" id="counter-value"></h2>
+        <div class="counter-buttons">
+            <button id="increment" onclick="Increment()">Increment by <span id="display-value-inc"></span></button>
+            <button id="decrement" onclick="Decrement()">Decrement by <span id="display-value-dec"></span></button>
+        </div>
+        <div class="counter-set-value">
+            <input type="number" id="value" required />
+        </div>
+        <div class="reset">
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
