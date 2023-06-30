@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Popup</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="toast" id="toast">
+        <h2 id="t-message" class="t-message"></h2>
+        <button class="close-button" id="close-button">
+            <img src="./assets/close-button.png" alt="Close Button" width="100%">
+        </button>
+    </div>
+    <div class="toast-popup">
+        <h1 class="title">Toast Popup</h1>
+        <div class="toast-settings">
+            <div class="left-right">
+                <label for="x-axis">Left/Right:</label>
+                <select name="x-axis" id="x-axis">
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                </select>
+            </div>
+            <div class="top-bottom">
+                <label for="y-axis">Top/Bottom:</label>
+                <select name="y-axis" id="y-axis">
+                    <option value="top">Top</option>
+                    <option value="bottom">Bottom</option>
+                </select>
+            </div>
+            <div class="toast-type">
+                <label for="type">Type:</label>
+                <select name="type" id="type">
+                    <option value="success">Success</option>
+                    <option value="error">Error</option>
+                    <option value="alert">Alert</option>
+                    <option value="info">Info</option>
+                </select>
+            </div>
+            <div class="toast-message">
+                <label for="message">Toast Message:</label>
+                <input type="text" name="message" id="message" value="Toast Message!">
+            </div>
+            <div class="toast-duration">
+                <label for="duration">Duration [1s-60s]:</label>
+                <input type="range" name="duration" id="duration" min="1" max="60">
+            </div>
+            <div class="toast-pop-submit">
+                <button onclick="myFunction()" class="toast-submit" id="toast-submit">Show Toast!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
