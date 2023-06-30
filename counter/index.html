@@ -10,13 +10,13 @@
 <body>
     <div class="counter">
         <h1 class="title">Counter</h1>
-        <h2 class="counter-value" id="counter-value">0</h2>
+        <h2 class="counter-value" id="counter-value"></h2>
         <div class="counter-buttons">
-            <button id="increment">Increment by 1</button>
-            <button id="decrement">Decrement by 1</button>
+            <button id="increment" onclick="Increment()">Increment by <span id="display-value-inc"></span></button>
+            <button id="decrement" onclick="Decrement()">Decrement by <span id="display-value-dec"></span></button>
         </div>
         <div class="counter-set-value">
-            <input type="number" required value="1" />
+            <input type="number" id="value" required />
         </div>
         <div class="reset">
             <button id="reset">Reset</button>
