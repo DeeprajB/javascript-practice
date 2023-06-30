@@ -8,6 +8,12 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <div class="toast" id="toast">
+        <h2 id="t-message" class="t-message"></h2>
+        <button class="close-button" id="close-button">
+            <img src="./assets/close-button.png" alt="Close Button" width="100%">
+        </button>
+    </div>
     <div class="toast-popup">
         <h1 class="title">Toast Popup</h1>
         <div class="toast-settings">
@@ -43,15 +49,9 @@
                 <input type="range" name="duration" id="duration" min="1" max="60">
             </div>
             <div class="toast-pop-submit">
-                <button name="toast-submit" id="toast-submit">Show Toast!</button>
+                <button onclick="myFunction()" class="toast-submit" id="toast-submit">Show Toast!</button>
             </div>
         </div>
-    </div>
-    <div class="toast" id="toast">
-        <h2>Toast Message!</h2>
-        <button class="close-button" id="close-button">
-            <img src="./assets/close-button.png" alt="Close Button">
-        </button>
     </div>
 </body>
 </html>

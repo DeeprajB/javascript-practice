@@ -1,0 +1,55 @@
+
+.toast-popup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+
+.toast-settings{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toast-duration{
+    display: flex;
+}
+
+label{
+    margin-right: 0.5rem;
+}
+
+.toast-submit{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#toast{
+    visibility: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+#toast.show{
+    visibility: visible;
+}
+
+.close-button{
+    width: 2rem;
+    height: 2rem;
+}
