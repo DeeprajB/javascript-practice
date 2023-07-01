@@ -1,0 +1,17 @@
+.string-transformer{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+
+input{
+    padding: 1rem;
+}
+
+.box{
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
