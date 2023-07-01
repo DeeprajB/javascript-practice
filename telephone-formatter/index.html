@@ -11,7 +11,7 @@
     <div class="telephone-formatter">
         <h1 class="title">Telephone Formatter</h1>
         <div class="telephone-input">
-            <input type="number" name="input" id="input">
+            <input type="text" name="input" id="input" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
         </div>
         <div class="telephone-output">
             <p id="output"></p>
