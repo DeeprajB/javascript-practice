@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="guess-number">
+        <h1 class="title">Guess Number</h1>
+        <div class="guess-input">
+            <p>Enter a guess from 0 to 100.</p>
+            <input type="number" name="input" id="input" min="0" max="100">
+            <button id="submit">Submit</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="guess-answer">
+            <p class="answer" id="answer"></p>
+        </div>
+        <div class="guess-array">
+            <p class="guess-text">Your guesses: <span class="array" id="array"></span></p>
+        </div>
+    </div>
+</body>
+</html>
